@@ -1,5 +1,0 @@
-
-{% extends "base.html" %}{% block content %}
-<div class="card"><h2>اختر صفحة المشرف</h2><p class="muted">لكل مشرف صفحة خاصة باسمه وتوقيعه.</p>
-<div class="grid">{% for key,s in supervisors.items() %}<a class="btn" href="/report/{{key}}">{{s.name}}<br><small>{{s.role}}</small></a>{% endfor %}</div></div>
-<div class="card"><a class="btn green" href="/manager">🔐 لوحة المدير</a></div>{% endblock %}
