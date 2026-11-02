@@ -1,0 +1,14 @@
+
+<!doctype html><html lang="ar" dir="rtl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ title or "نظام تقارير إدارة الأمن والسلامة" }}</title>
+<style>
+body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#f4f7fb;color:#172033}
+header{background:#0f2b57;color:#fff;padding:20px;text-align:center}
+.container{max-width:850px;margin:25px auto;padding:0 16px}.card{background:#fff;border-radius:14px;padding:22px;margin:16px 0;box-shadow:0 3px 15px #0001}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+input,select,textarea{width:100%;box-sizing:border-box;padding:12px;border:1px solid #ccd4e0;border-radius:9px;font-size:16px}
+label{display:block;font-weight:bold;margin-bottom:6px}button,.btn{background:#1266d6;color:#fff;border:0;padding:13px 18px;border-radius:9px;font-size:16px;text-decoration:none;display:inline-block;cursor:pointer}
+.btn.green{background:#16803a}.muted{color:#667085}.num{font-size:28px;font-weight:bold}.sig{max-width:220px;max-height:100px;object-fit:contain}
+table{width:100%;border-collapse:collapse}td,th{padding:10px;border-bottom:1px solid #e5e7eb;text-align:right}
+</style></head><body><header><h2>🛡️ إدارة الأمن والسلامة</h2><div>نظام التقارير الإلكتروني للمشرفين</div></header><main class="container">{% block content %}{% endblock %}</main></body></html>
