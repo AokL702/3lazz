@@ -1,0 +1,11 @@
+
+{% extends "base.html" %}{% block content %}
+<div class="card"><h2>📊 لوحة المدير</h2><div class="grid">
+<div><div class="muted">إجمالي التقارير</div><div class="num">{{totals.c}}</div></div>
+<div><div class="muted">الاعتداءات</div><div class="num">{{totals.assaults}}</div></div>
+<div><div class="muted">أعطال التيار</div><div class="num">{{totals.power}}</div></div>
+<div><div class="muted">الزوار</div><div class="num">{{totals.visitors}}</div></div>
+<div><div class="muted">المصاعد</div><div class="num">{{totals.elevators}}</div></div>
+<div><div class="muted">محاضر المشرفين</div><div class="num">{{totals.minutes}}</div></div>
+</div></div>
+<div class="card"><h3>آخر التقارير</h3><table><tr><th>المشرف</th><th>التاريخ</th><th>الوردية</th><th>PDF</th></tr>{% for r in reports %}<tr><td>{{r.supervisor_name}}</td><td>{{r.report_date}}</td><td>{{r.shift}}</td><td><a href="/pdf/{{r.token}}">فتح</a></td></tr>{% endfor %}</table></div>{% endblock %}
