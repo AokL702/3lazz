@@ -1,4 +1,0 @@
-
-{% extends "base.html" %}{% block content %}<div class="card" style="text-align:center"><h2>✅ تم حفظ التقرير بنجاح</h2>
-{% if email_ok %}<p>📧 تم إرسال نسخة إلى البريد.</p>{% else %}<p class="muted">تم حفظ التقرير. البريد يحتاج إعداد SMTP في Render.</p>{% endif %}
-<a class="btn green" href="/pdf/{{token}}">⬇️ تنزيل التقرير PDF</a><br><br><a class="btn" href="/">العودة للرئيسية</a></div>{% endblock %}
